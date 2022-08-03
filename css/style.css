@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  margin: 0.1px;
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* /////scrollbar  */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--selver);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--blueliget);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blueliget);
+}
+/* ///////////////////عام */
+:root {
+  --dark: #19283f;
+  --gre: #0b8cf1;
+  --red-btn: #0b8cf1;
+  --yallow: #ffc400;
+  --selver: white;
+  --blue: #115e7e;
+  --blueliget: #1593b6e0;
+}
+/* /////للبتن  */
+.main-btn {
+  background-color: var(--yallow);
+  color: var(--selver);
+  transition: 0.3s;
+}
+.main-btn:hover {
+  background: var(--gre);
+  color: var(--selver);
+}
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--blue);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icon-bar1 .whatsapp {
+  position: fixed;
+  background-color: rgb(68, 187, 68);
+  width: 45px;
+  text-align: center;
+  bottom: 8%;
+  right: 18px;
+  margin: 5px;
+  font-size: 30px;
+  color: white;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  z-index: 2;
+}
+.icon-bar2 .call {
+  position: fixed;
+  background-color: rgb(68, 187, 68);
+  width: 45px;
+  text-align: center;
+  bottom: 8%;
+  left: 18px;
+  margin: 5px;
+  font-size: 25px;
+  color: white;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  z-index: 2;
+}
+.icon-bar2 .callText {
+  position: fixed;
+  background-color: var(--selver);
+  bottom: 8%;
+  padding: 0 5px;
+  left: 80px;
+  color: var(--dark);
+  z-index: 2;
+  box-shadow: 0px 3px 5px var(--dark);
+  border-radius: 3px;
+}
+.icon-bar2 .callText::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 0;
+  height: 0;
+  margin-top: -10px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent var(--selver) transparent transparent;
+}
+/* //////////////////// */
+.navbar {
+  background: var(--blue);
+}
+.navbar img {
+  margin-left: 150px;
+}
+@media (max-width: 700px) {
+  .navbar img {
+    margin-left: 0px;
+  }
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link .active {
+  color: var(--yallow);
+}
+.search {
+  border-left: 1px solid var(--yallow);
+  margin-left: 15px;
+}
+.search svg {
+  color: var(--yallow);
+}
+.navbar .navbar-toggler {
+  color: white;
+  border-color: white;
+  font-size: 25px;
+}
+.navbar .navbar-toggler {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--gre);
+}
+/* ///////////////////////////////////////////////////////////////////////// landing */
+
+.landing {
+  background: linear-gradient(var(--blue), var(--blueliget)),
+    url("../img/pexels-mikhail-nilov-6930597.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 76px);
+}
+.landing h1 {
+  font-size: 50px;
+}
+@media (max-width: 700px) {
+  .landing h1 {
+    font-size: 35px;
+  }
+}
+.main-title svg {
+  font-size: 50px;
+  color: var(--yallow);
+}
+/* /////////////////////////////////// */
+.about_img img {
+  border-radius: 10px;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////fiuture */
+
+.feature .icons .icon {
+  color: var(--blueliget);
+  width: 60px;
+  height: 60px;
+  padding: 13px;
+  /* background: var(--yallow); */
+  border-radius: 50%;
+  border: 1px solid var(--yallow);
+}
+.feature h4 {
+  color: var(--yallow);
+}
+/* //////////////////////////////////////////////////////our-title */
+.our-title {
+  background: linear-gradient(var(--blueliget), var(--blueliget)),
+    url("../img/pexels-pixabay-265087.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.our-title .row div div {
+  box-shadow: 10px 0 15px var(--dark);
+}
+.our-title ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: 0.3s all;
+}
+.our-title ul li:hover,
+.our-title ul li:focus {
+  background-color: var(--red-btn);
+  color: var(--yallow);
+}
+.our-title .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.our-title .box::before {
+  content: attr(work-box);
+  position: absolute;
+  background-color: #ffc400a6;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.3s all;
+  transform: translatey(calc(-100% - 5px));
+}
+.our-title .box:hover:before {
+  transform: translatey(0);
+}
+/* ///////////////////////////////////////////////// stuff */
+.text-stuff {
+  max-width: 700px;
+}
+/* //////////////////////////////////////////////team */
+.team {
+  background-color: var(--selver);
+}
+.team h4 {
+  color: var(--yallow);
+}
+.team .box h4 {
+  color: white;
+  background-color: var(--gre);
+}
+.logs h2 {
+  width: 60%;
+}
+@media (max-width: 700px) {
+  .logs h2 {
+    width: 100%;
+  }
+}
+/* ////////////////////////////////////////////////////////////////// feedback*/
+.cards {
+  width: 60%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 30px 0 #115d7e3b;
+  margin: 30px auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+.cards img {
+  width: 70px;
+  border-radius: 50px;
+}
+@media (max-width: 700px) {
+  .cards {
+    width: 100%;
+    height: 300px;
+  }
+}
+/* //////////////////////////////////////////////////////// */
+.start {
+  background: linear-gradient(var(--blue), var(--blueliget)),
+    url("../img/pexels-mikhail-nilov-6930597.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.start1 {
+  background: linear-gradient(var(--blue), var(--blueliget)),
+    url("../img/pexels-mikhail-nilov-6930597.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.start1 {
+  display: flex;
+}
+@media (max-width: 700px) {
+  .start1 {
+    display: block;
+    text-align: center;
+  }
+}
+.start a span {
+  font-size: 20px;
+  margin-right: 7px;
+}
+
+/* ///////////////////////////////////////////// packges */
+.packages {
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .packages {
+    padding: 40px;
+  }
+}
+.cardPackage {
+  box-shadow: 0px 0px 30px 0 #115d7e3b;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s;
+}
+.cardPackage:hover {
+  box-shadow: 0px 0px 30px 0 #115d7e74;
+  transform: scale(1.1);
+}
+.titleCard {
+  background-color: var(--gre);
+  color: var(--yallow);
+  border-radius: 5px;
+  font-weight: bold;
+}
+.cardPackage h1 {
+  font-size: 50px;
+  color: var(--gre);
+}
+.cardPackage h1 span {
+  font-size: 20px;
+  color: var(--gre);
+}
+.cardPackage ul li {
+  margin-top: 15px;
+}
+.cardPackage ul li svg {
+  color: rgb(1, 161, 1);
+  margin-left: 5px;
+}
+.cardPackage .none svg {
+  color: rgba(74, 74, 74, 0.538);
+}
+.cardPackage .none {
+  color: rgba(74, 74, 74, 0.538);
+}
+
+/* //////////////////////////////////////////////////////subscrip */
+.subscrip {
+  background: linear-gradient(var(--blue), var(--blueliget)),
+    url("../img/pexels-pixabay-265087.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.subscrip h5 {
+  font-size: 18px;
+}
+.subscrip input {
+  border-color: transparent transparent var(--selver) transparent;
+}
+.subscrip input:focus {
+  outline: none;
+}
+.subscrip input::placeholder {
+  color: white;
+}
+.subscrip a {
+  background-color: var(--yallow);
+}
+.subscrip a:hover {
+  background-color: var(--blueliget);
+}
+
+/* ////////////////////////////////////////////////////foot */
+.ulli li a {
+  color: var(--selver);
+}
+.ulli li a span {
+  color: var(--yallow);
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 5px;
+}
+.ulli li a:hover {
+  color: var(--yallow);
+}
+
+.foot {
+  background-color: var(--blue);
+}
+.foot .coby span {
+  color: var(--yallow);
+}
+.foot .raite span {
+  color: var(--yallow);
+}
+
+.foot a svg {
+  font-size: 30px;
+  color: var(--yallow);
+  background: var(--selver);
+  transition: 0.3s;
+  padding: 3px;
+  border-radius: 5px;
+}
+.foot a svg:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px 0 var(--blueliget);
+  color: var(--gre);
+}
+/* /////////////////////////////////////////////////////////////contact */
+.contact {
+  background: linear-gradient(var(--blue), #1593b6f3),
+    url("../img/pexels-pixabay-265087.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.title-contact span {
+  color: var(--yallow);
+}
+.contact .form .address {
+  box-shadow: 0px 0px 30px 0 var(--blueliget);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.contact .form .address:hover {
+  transform: scale(1.1);
+}
+.contact .form .address a {
+  color: var(--yallow);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.form .forms h3 {
+  width: 75%;
+}
+
+.form form input {
+  background: transparent;
+  color: white;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.278);
+}
+.form form input:focus {
+  background: transparent;
+  color: white;
+}
+.form form input {
+  background: transparent;
+  color: white;
+}
+.form form input::placeholder {
+  color: var(--yallow);
+}
+.form form select {
+  background: transparent;
+  color: var(--yallow);
+  padding: 10px;
+  width: 99%;
+  border: 1px solid rgba(255, 255, 255, 0.278);
+}
+.form form select:focus {
+  background: transparent;
+  color: white;
+}
+.form form select option {
+  color: black;
+}
+
+
+.form form textarea {
+  background: transparent;
+  color: white;
+  width: 99%;
+  border: 1px solid rgba(255, 255, 255, 0.278);
+}
+.form form textarea:focus {
+  background: transparent;
+  color: white;
+}
+.form form textarea::placeholder {
+  color: var(--yallow);
+}
+.form .map iframe {
+  border-radius: 3px;
+  opacity: 0.8;
+}
+@media (max-width: 700px) {
+  .form form select {
+    width: 96%;
+  }
+  .form form textarea {
+    width: 96%;
+  }
+  .form .forms h3 {
+    width: 100%;
+  }
+}
