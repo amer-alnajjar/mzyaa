@@ -57,6 +57,7 @@ html {
   bottom: 8%;
   right: 18px;
   font-size: 30px;
+  margin: 5px;
   color: white;
   height: 45px;
   line-height: 45px;
@@ -71,6 +72,7 @@ html {
   bottom: 8%;
   left: 18px;
   font-size: 25px;
+  margin: 5px;
   color: white;
   height: 45px;
   line-height: 45px;
