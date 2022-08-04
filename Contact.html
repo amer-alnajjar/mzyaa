@@ -67,7 +67,7 @@
     </nav>
     <!-- /////////////////////////////////////////// -->
     <div class="title-contact">
-        <h1 class="text-center text-light mt-5 fa-4x">تواصل <span>معنا</span></h1>
+        <h1 class="text-center text-light mt-5 fa-4x">تواصل معنا</h1>
     </div>
     <div class=" form  pt-5 pb-5">
         <div class="container">
@@ -81,7 +81,7 @@
                 <div class="col-md-3 mt-3">
                     <div class="address p-3">
                         <h3 class="text-light"><a href="mailto: admin@mzyaa.com"><i
-                                    class="fa-solid fa-envelope"></i></a> جيميل
+                                    class="fa-regular fa-envelope"></i></a> جيميل
                         </h3>
                         <p><a class="text-white-50" href="mailto: admin@mzyaa.com">admin@mzyaa.com
                             </a></p>
@@ -98,7 +98,7 @@
                 <div class="col-md-3 mt-3">
                     <div class="address p-3">
                         <h3 class="text-light"><a href="https://www.facebook.com/mzyaacom"><i
-                                    class="fa-brands fa-facebook   "></i></a> فيس بوك </h3>
+                                    class="fa-brands fa-facebook-f"></i></a> فيس بوك </h3>
                         <p><a class="text-white-50" href="https://www.facebook.com/mzyaacom">مزايا لتكنولوجيا المعلومات
                             </a></p>
                     </div>
@@ -113,7 +113,7 @@
                 <div class="col-md-3 mt-3">
                     <div class="address p-3">
                         <h3 class="text-light"> <a href="https://twitter.com/mzyaacom
-                            "><i class="fa-brands fa-twitter"></i></a> تويتر</h3>
+                            "><i class="fab fa-twitter"></i></a> تويتر</h3>
                         <p><a class="text-white-50" href="https://twitter.com/mzyaacom">mzyaacom@</a></p>
                     </div>
                 </div>
@@ -127,40 +127,41 @@
                 <div class="col-md-3 mt-3">
                     <div class="address p-3">
                         <h3 class="text-light"> <a href="https://www.snapchat.com/add/mzyaacom
-                            "><i class="fa-brands fa-linkedin"></i></a> لينكد ان</h3>
+                            "><i class="fa-brands fa-linkedin-in"></i></a> لينكد ان</h3>
                         <p><a class="text-white-50" href="https://www.snapchat.com/add/mzyaacom">mzyaacom@</a></p>
                     </div>
                 </div>
 
             </div>
             <div class="forms">
-                <h3 class="p-4 text-light m-auto mt-2  text-center ">من فضلكم كتابة رسالة واضح فيها نوع الخدمة
+                <h3 class="p-4 text-light m-auto mt-2  text-center ">من فضلكم كتابة رسالة واضحة فيها نوع الخدمة
                     المطلوبة لنتمكن
                     من
                     الرد عليكم بإجابة
                     سريعة ووافية المعلومات</h3>
-                <form action="" class="mt-3 text-center">
+                <form method="post" id="sheetdb-form-data" class="mt-3 text-center">
                     <div class="d-flex">
-                        <input type="text" class="form-control m-2" placeholder="اسمك" id="exampleInputEmail1"
-                            aria-describedby="emailHelp">
-                        <input type="email" class="form-control m-2" placeholder="البريد الاكتروني"
-                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="text" name="Name" class="form-control m-2" placeholder="اسمك"
+                            id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        <input type="email" name="Email" class="form-control m-2" placeholder="البريد الاكتروني"
+                            id="exampleInputEmail1" aria-describedby="emailHelp" required>
                     </div>
                     <div class="d-flex">
-                        <input type="number" class="form-control m-2" placeholder="رقم الموبايل /واتس آب"
-                            id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <input type="text" class="form-control m-2" placeholder="رابط موقعك /اسم المؤسسة"
-                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="number" name="Phone" class="form-control m-2" placeholder="رقم الموبايل /واتس آب"
+                            id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        <input type="text" required name="Site/CompanyName" class="form-control m-2"
+                            placeholder="رابط موقعك /اسم المؤسسة" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
-                    <select class="form-control m-2 " id="exampleFormControlSelect1">
-                        <option >اختر الخدمة المطلوبة</option>
-                        <option >الحملات الإعلانية المدفوعة</option>
-                        <option> تصميم وتطوير المواقع الإلكترونية</option>
-                        <option>التسويق الرقمي</option>
-                        <option>برامج شؤون الموظفين</option>
-                        <option>برمجة أنظمة المؤسسات</option>
+                    <select class="form-control m-2 " required name="Servecis" id="exampleFormControlSelect1">
+                        <option value="**">اختر الخدمة المطلوبة</option>
+                        <option value="الحملات الإعلانية المدفوعة">الحملات الإعلانية المدفوعة</option>
+                        <option value="تصميم وتطوير المواقع الإلكترونية"> تصميم وتطوير المواقع الإلكترونية</option>
+                        <option value="التسويق الرقمي">التسويق الرقمي</option>
+                        <option value="برامج شؤون الموظفين">برامج شؤون الموظفين</option>
+                        <option value="برمجة أنظمة المؤسسات">برمجة أنظمة المؤسسات</option>
+                        <option value="برمجة تطبيقات الموبايل">برمجة تطبيقات الموبايل</option>
                     </select>
-                    <textarea class="form-control m-2  mt-3" name="" rows="4" placeholder="الرسالة"></textarea>
+                    <textarea class="form-control m-2  mt-3" name="Message" rows="4" placeholder="الرسالة"></textarea>
                     <button class="btn rounded-pill fa-2x mt-3 main-btn w-50" href="">اطلب الان</button>
                 </form>
             </div>
@@ -181,21 +182,20 @@
                 <div class="col-lg-4 col-md-6 mb-3">
                     <div class="box">
                         <img class="img-fluid mb-4" src="img/logomzaya.png" alt="" width="200px" height="60px" />
-                        <p class="mb-5">
+                        <p class="mb-5 praAboute">
                             شركة تسويقية تسعى جاهدة إلى تقديم بصمة فعالة في مجال الويب وتكنولوجيا المعلومات وتقدم حلول
                             مبتكرة وعصرية تساعد على تحقيق الأنتشار وتحقيق الأهداف على أيدي أفضل الخبراء
                         </p>
-                        <div class="d-flex gap-2 list-unstyled sochilIcons mb-3">
-                            <a href="mailto: admin@mzyaa.com"><i class="fa-solid fa-envelope"></i></a>
-                            <a href="http://wa.me/966560811015"><i class="fa-brands fa-whatsapp"></i></a>
-                            <a href="https://www.facebook.com/mzyaacom"><i class="fa-brands fa-facebook   "></i></a>
-                            <a href="https://www.instagram.com/mzyaacom"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://twitter.com/mzyaacom"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="https://www.snapchat.com/add/mzyaacom"><i class="fa-brands fa-snapchat"></i></a>
+                        <div class="d-flex gap-1 list-unstyled sochilIcons mb-2">
+                            <a href="http://wa.me/966560811015"><img src="img/whats.png" alt=""></a>
+                            <a href="https://www.facebook.com/mzyaacom"><img src="img/facee.png" alt=""></a>
+                            <a href="https://www.instagram.com/mzyaacom"><img src="img/instaa.png" alt=""></a>
+                            <a href="https://twitter.com/mzyaacom"><img src="img/twit.png" alt=""></a>
+                            <a href="https://www.snapchat.com/add/mzyaacom"><img src="img/snapp.png" alt=""></a>
                             <a href="https://www.snapchat.com/add/mzyaacom
-                                "><i class="fa-brands fa-linkedin"></i></a>
+                                "><img src="img/linkedin.png" alt=""></a>
                         </div>
-                        <h3 class="text-light">Mzyaa Information Technology</h3>
+                        <h6 class="text-light">Mzyaa Information Technology</h6>
 
                     </div>
                 </div>
@@ -204,16 +204,16 @@
                         <h5 class="text-light">الروابط</h5>
                         <ul class="list-unstyled d-inline-block lh-lg ulli text-end  ">
                             <li class="nav-item">
-                                <a class="nav-link " href="#Home"> <span>> </span> الرئيسية</a>
+                                <a class="nav-link " href="#Home"> <span>></span> الرئيسية</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="#Abute"> <span>> </span> من نحن</a>
+                                <a class="nav-link " href="#Abute"> <span>></span> من نحن</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="#Servecis"> <span>> </span> الخدمات</a>
+                                <a class="nav-link " href="#Servecis"> <span>></span> الخدمات</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="#Portfolio"> <span>> </span> أعمالنا</a>
+                                <a class="nav-link " href="#Portfolio"> <span>></span> أعمالنا</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link " href="Contact.html"> <span>> </span>تواصل معنا</a>
@@ -225,7 +225,7 @@
                 <div class="col-lg-4 col-md-6 mb-3 ">
                     <div class="contacts">
                         <h5 class="text-light">تواصل معنا</h5>
-                        <p class="lh-lg mb-4">
+                        <p class="lh-lg mb-4 praAboute">
                             جمع أفضل الحلول الرقمية المُناسبة لتطوير المؤسسات وبتكلفة مُناسبة من خلال الخدمات الرقمية
                             وخاصة مجال تصميم وتطوير المواقع الإلكترونية والتسويق الإلكتروني.
                         </p>
@@ -244,6 +244,8 @@
     <script>
         new WOW().init();
     </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </body>
 
 </html>
