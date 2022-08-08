@@ -139,21 +139,21 @@
                     من
                     الرد عليكم بإجابة
                     سريعة ووافية المعلومات</h3>
-                <form method="post" id="sheetdb-form-data" class="mt-3 text-center">
+                <form id="sheetdb-form-data" class="mt-3 text-center" autocomplete="off">
                     <div class="d-flex">
-                        <input type="text" name="Name" class="form-control m-2" placeholder="اسمك"
-                            id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                        <input type="email" name="Email" class="form-control m-2" placeholder="البريد الاكتروني"
-                            id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        <input type="text" name="Name" class="form-control m-2" required placeholder="اسمك"
+                            id="inputName" aria-describedby="emailHelp">
+                        <input type="email" name="Email" class="form-control m-2" required
+                            placeholder="البريد الاكتروني" id="inputEmail1" aria-describedby="emailHelp">
                     </div>
                     <div class="d-flex">
-                        <input type="number" name="Phone" class="form-control m-2" placeholder="رقم الموبايل /واتس آب"
-                            id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                        <input type="text" required name="Site/CompanyName" class="form-control m-2"
-                            placeholder="رابط موقعك /اسم المؤسسة" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="number" name="Phone" class="form-control m-2" required
+                            placeholder="رقم الموبايل /واتس آب" id="inputNumber" aria-describedby="emailHelp">
+                        <input type="text" name="Site/CompanyName" class="form-control m-2" required
+                            placeholder="رابط موقعك /اسم المؤسسة" id="inputSiteName" aria-describedby="emailHelp">
                     </div>
                     <select class="form-control m-2 " required name="Servecis" id="exampleFormControlSelect1">
-                        <option value="**">اختر الخدمة المطلوبة</option>
+                        <option value="">اختر الخدمة المطلوبة</option>
                         <option value="الحملات الإعلانية المدفوعة">الحملات الإعلانية المدفوعة</option>
                         <option value="تصميم وتطوير المواقع الإلكترونية"> تصميم وتطوير المواقع الإلكترونية</option>
                         <option value="التسويق الرقمي">التسويق الرقمي</option>
@@ -161,8 +161,9 @@
                         <option value="برمجة أنظمة المؤسسات">برمجة أنظمة المؤسسات</option>
                         <option value="برمجة تطبيقات الموبايل">برمجة تطبيقات الموبايل</option>
                     </select>
-                    <textarea class="form-control m-2  mt-3" name="Message" rows="4" placeholder="الرسالة"></textarea>
-                    <button class="btn rounded-pill fa-2x mt-3 main-btn w-50" href="">اطلب الان</button>
+                    <textarea class="form-control m-2  mt-3" name="Message" rows="4" required
+                        placeholder="الرسالة"></textarea>
+                    <button class="btn rounded-pill fa-2x mt-3 main-btn w-50" type="submit">اطلب الان</button>
                 </form>
             </div>
             <div class="map">
