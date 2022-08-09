@@ -427,7 +427,7 @@ html {
 .foot .raite span {
   color: var(--yallow);
 }
-.foot h5:nth-child(1) {
+.foot .link h5 {
   margin-right: 35px;
 }
 @media (max-width: 700px) {
