@@ -25,7 +25,8 @@ html {
   --dark: #19283f;
   --gre: #0b8cf1;
   --red-btn: #0b8cf1;
-  --yallow: #ffc400;
+  --yallow: #eabc3d;
+  --yallow-light: #f1c347;
   --selver: white;
   --blue: #115e7e;
   --blueliget: #1593b6e0;
@@ -64,7 +65,6 @@ html {
   border-radius: 50%;
   z-index: 2;
   box-shadow: 0px 3px 5px var(--dark);
-
 }
 .icon-bar2 .call {
   position: fixed;
@@ -81,7 +81,6 @@ html {
   border-radius: 50%;
   z-index: 2;
   box-shadow: 0px 3px 5px var(--dark);
-
 }
 .icon-bar2 .callText {
   position: fixed;
@@ -253,7 +252,8 @@ html {
   background-color: var(--gre);
 }
 .logs h2 {
-  width: 60%;
+  width: 50%;
+  line-height: 1.5;
 }
 @media (max-width: 700px) {
   .logs h2 {
@@ -292,6 +292,9 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.start h1{
+  line-height: 1.5;
+}
 .start1 {
   background: linear-gradient(var(--blue), var(--blueliget)),
     url("../img/pexels-mikhail-nilov-6930597.jpg");
@@ -300,6 +303,11 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+.start1 a {
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 20px;
 }
 .start1 {
   display: flex;
@@ -336,7 +344,7 @@ html {
 }
 .titleCard {
   background-color: var(--gre);
-  color: var(--yallow);
+  color: var(--yallow-light);
   border-radius: 5px;
   font-weight: bold;
 }
@@ -457,7 +465,8 @@ html {
 }
 
 .form .forms h3 {
-  width: 75%;
+  width: 70%;
+  line-height: 1.5;
 }
 
 .form form input {
@@ -475,11 +484,11 @@ html {
   color: white;
 }
 .form form input::placeholder {
-  color: var(--yallow);
+  color: var(--selver);
 }
 .form form select {
   background: transparent;
-  color: var(--yallow);
+  color: var(--selver);
   padding: 10px;
   width: 99%;
   border: 1px solid rgba(255, 255, 255, 0.278);
@@ -503,7 +512,7 @@ html {
   color: white;
 }
 .form form textarea::placeholder {
-  color: var(--yallow);
+  color: var(--selver);
 }
 .form .map iframe {
   border-radius: 3px;
