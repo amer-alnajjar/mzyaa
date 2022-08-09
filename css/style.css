@@ -63,6 +63,8 @@ html {
   line-height: 53px;
   border-radius: 50%;
   z-index: 2;
+  box-shadow: 0px 3px 5px var(--dark);
+
 }
 .icon-bar2 .call {
   position: fixed;
@@ -78,6 +80,8 @@ html {
   line-height: 50px;
   border-radius: 50%;
   z-index: 2;
+  box-shadow: 0px 3px 5px var(--dark);
+
 }
 .icon-bar2 .callText {
   position: fixed;
@@ -107,7 +111,7 @@ html {
   background: var(--blue);
 }
 .navbar img {
-  margin-left: 150px;
+  margin-left: 100px;
 }
 @media (max-width: 700px) {
   .navbar img {
