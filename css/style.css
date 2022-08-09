@@ -292,8 +292,15 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.start h1{
+.start h1 {
+  width: 51%;
   line-height: 1.5;
+}
+@media (max-width: 700px) {
+  .start h1 {
+    width: 100%;
+    line-height: 1.5;
+  }
 }
 .start1 {
   background: linear-gradient(var(--blue), var(--blueliget)),
@@ -411,7 +418,6 @@ html {
 .ulli li a:hover {
   color: var(--yallow);
 }
-
 .foot {
   background-color: var(--blue);
 }
@@ -421,7 +427,9 @@ html {
 .foot .raite span {
   color: var(--yallow);
 }
-
+.foot h5:nth-child(1){
+  margin-right: 35px;
+}
 .foot a img {
   width: 40px;
   transition: 0.3s;
@@ -430,8 +438,9 @@ html {
 .foot a img:hover {
   transform: scale(1.1);
 }
-.foot .box h6 {
-  font-size: 18px;
+.foot h6 {
+  font-size: 22.3px;
+  margin-top: 28px;
 }
 /* /////////////////////////////////////////////////////////////contact */
 .contact {
