@@ -427,9 +427,15 @@ html {
 .foot .raite span {
   color: var(--yallow);
 }
-.foot h5:nth-child(1){
+.foot h5:nth-child(1) {
   margin-right: 35px;
 }
+@media (max-width: 700px) {
+  .foot h5:nth-child(1) {
+    margin-right: 0px;
+  }
+}
+
 .foot a img {
   width: 40px;
   transition: 0.3s;
@@ -439,8 +445,8 @@ html {
   transform: scale(1.1);
 }
 .foot h6 {
-  font-size: 22.3px;
-  margin-top: 28px;
+  font-size: 19.3px;
+  margin: 20px 2.5px 0 0px;
 }
 /* /////////////////////////////////////////////////////////////contact */
 .contact {
