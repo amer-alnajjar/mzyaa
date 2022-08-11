@@ -166,6 +166,10 @@ html {
   font-size: 50px;
   color: var(--yallow);
 }
+.landing a{
+  width: 110px;
+  font-size: 20px;
+}
 /* /////////////////////////////////// */
 .about_img img {
   border-radius: 10px;
